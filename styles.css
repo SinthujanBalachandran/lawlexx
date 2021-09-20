@@ -7,6 +7,34 @@
     scroll-behavior: smooth;
 }
 
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #2E409C;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #152263;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -441,6 +469,11 @@ form input.btn {
     width: 40px;
     height: 40px;
     font-size: 25px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    color: #2E409C;
 }
 
 .footer {
@@ -460,6 +493,10 @@ form input.btn {
 .footer-links a {
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-links a:hover {
+    color: #2E409C;
 }
 
 .footer-links a span {
