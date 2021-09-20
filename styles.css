@@ -61,6 +61,16 @@ h3 {
     letter-spacing: 2px;
 }
 
+h5 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 p {
     color: #333;
     line-height: 25px;
@@ -429,12 +439,14 @@ form {
 }
 
 input,
-textarea {
+textarea,
+select {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #e0dfdf;
     outline: none;
     width: 100%;
+    color: #555;
 }
 
 form input.btn {
@@ -453,6 +465,7 @@ form input.btn {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .hire-us .hire-text {
@@ -484,10 +497,12 @@ form input.btn {
     padding: 20px 100px;
     background: #222;
     border-top: 1px solid rgba(224, 223, 223, .2);
+    text-align: center;
 }
 
 .footer-links {
     display: flex;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -617,11 +632,14 @@ form input.btn {
 
 @media( max-width:500px) {
     section {
-        padding: 50px 20px;
+        padding: 50px 30px;
     }
     .achievement {
         grid-template-columns: 1fr;
         row-gap: 40px;
+    }
+    .footer {
+        font-size: 0.9rem;
     }
     .footer-links {
         flex-wrap: wrap;
@@ -630,9 +648,9 @@ form input.btn {
         margin-right: 5px;
         white-space: nowrap;
     }
-    .footer-links span {
+    /* .footer-links span {
         display: none;
-    }
+    } */
     header {
         padding: 40px 20px;
     }
