@@ -494,6 +494,9 @@ form input.btn {
         color: #fff;
         padding: 15px;
     }
+    header .navigation li {
+        margin-left: 0px;
+    }
     .toggle {
         display: inline-block;
         position: fixed;
@@ -592,5 +595,14 @@ form input.btn {
     }
     .footer-links span {
         display: none;
+    }
+    header {
+        padding: 40px 20px;
+    }
+    header.sticky {
+        padding: 10px 20px;
+    }
+    .toggle {
+        right: 20px;
     }
 }
