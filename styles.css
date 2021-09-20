@@ -94,7 +94,7 @@ header.sticky {
 }
 
 header .logo {
-    color: #2E409C;
+    color: #fff;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
@@ -121,6 +121,10 @@ header .navigation li a {
     white-space: nowrap;
 }
 
+.toggle {
+    display: none;
+}
+
 header.sticky .navigation li a {
     color: #111;
     white-space: nowrap;
@@ -142,7 +146,10 @@ section {
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
-    background: #2E409C;
+    background: url(lawlexx-background.png);
+    background-position: center;
+    background-size: cover;
+    background-origin: content-box;
 }
 
 .slider .slide {
@@ -292,11 +299,15 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: #F5F5F5;
-    column-gap: 20px;
+    column-gap: 40px;
 }
 
 .why-choose-us .content h2 {
     margin-bottom: 30px;
+}
+
+.slider-small {
+    text-align: center;
 }
 
 
@@ -316,7 +327,7 @@ img {
 .uniqueness-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 40px;
 }
 
 .uniqueness-content {
@@ -360,6 +371,10 @@ img {
     margin-bottom: 30px;
 }
 
+.progress {
+    text-align: center;
+}
+
 
 /* Contact starts here */
 
@@ -391,6 +406,7 @@ textarea {
     padding: 10px;
     border: 1px solid #e0dfdf;
     outline: none;
+    width: 100%;
 }
 
 form input.btn {
@@ -453,7 +469,7 @@ form input.btn {
 
 /* mobile responsive starts here */
 
-@media(max-width:1110px) {
+@media( max-width:1110px) {
     ul.navigation {
         position: fixed;
         top: 0;
@@ -479,9 +495,10 @@ form input.btn {
         padding: 15px;
     }
     .toggle {
+        display: inline-block;
         position: fixed;
         top: 36px;
-        right: 10%;
+        right: 50px;
         width: 45px;
         height: 45px;
         cursor: pointer;
@@ -505,5 +522,75 @@ form input.btn {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+    }
+    header.sticky .navigation li a {
+        color: #fff;
+    }
+    header.sticky .navigation li a:hover {
+        color: #2E409C;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media( max-width:1110px) {
+    .why-choose-us,
+    .success {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}
+
+@media( max-width:935px) {
+    .uniqueness-container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .achievement {
+        padding: 50px;
+    }
+}
+
+@media( max-width:800px) {
+    .short-story {
+        padding: 100px 10%;
+    }
+    .achievement {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
+
+@media( max-width:678px) {
+    .footer {
+        padding: 20px;
+    }
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media( max-width:500px) {
+    section {
+        padding: 50px 20px;
+    }
+    .achievement {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+    }
+    .footer-links li {
+        margin-right: 5px;
+        white-space: nowrap;
+    }
+    .footer-links span {
+        display: none;
     }
 }
