@@ -1,0 +1,56 @@
+.clients {
+    background: #F5F5F5;
+}
+
+.clients .container {
+    column-count: 3;
+    column-gap: 30px;
+}
+
+.client {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 30px;
+    break-inside: avoid;
+    text-align: center;
+    background: #fff;
+    justify-items: center;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+.client:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.client-img-box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #2E409C;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+@media( max-width:1070px) {
+    .clients {
+        padding: 50px;
+    }
+}
+
+@media( max-width:940px) {
+    .clients .container {
+        column-count: 2;
+        column-gap: 30px;
+    }
+}
+
+@media( max-width:630px) {
+    .clients {
+        padding: 30px;
+    }
+    .clients .container {
+        column-count: 1;
+        column-gap: 30px;
+    }
+}
