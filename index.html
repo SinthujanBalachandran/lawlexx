@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="styles.css">
     <title>Lawlexx</title>
 </head>
@@ -20,8 +21,23 @@
         <a href="#" class="logo">Lawlexx</a>
         <ul class="navigation">
             <li><a href="#">HOME</a></li>
-            <li><a href="#">TEAM LAWLEXX</a></li>
-            <li><a href="#">SERVICES</a></li>
+            <li class="dropdown">
+                <div class="dropbtn">TEAM LAWLEXX <i class="fas fa-angle-down"></i></div>
+                <div class="dropdown-content">
+                    <a href="pages/team-lawlexx/team-line-up.html">Team Line Up</a>
+                    <a href="#">About Lawlexx</a>
+                    <a href="#">Job Offers & Internships</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropbtn">SERVICES <i class="fas fa-angle-down"></i></div>
+                <div class="dropdown-content">
+                    <a href="#">Web Development</a>
+                    <a href="#">Mobile App Development</a>
+                    <a href="#">Digital Marketing</a>
+                    <a href="#">Cyber Security Consultancy</a>
+                </div>
+            </li>
             <li><a href="pages/our-clients.html">OUR CLIENTS</a></li>
             <li><a href="pages/contact.html">CONTACT US</a></li>
             <li><a href="pages/requestQuote.html">REQUEST A QUOTE</a></li>
@@ -168,11 +184,11 @@
             <h2>Our Contacts</h2>
             <ul>
                 <li>
-                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div> Address: 1st floor, Royal plaza <br> Unique floral road Tse-Addo, <br> Accra, Ghana.</li>
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div> Address: Modern Academy <br>Kpone-bawaleshie <br>Accra-Ghana</li>
                 <li>
-                    <div class="icon"><i class="fas fa-phone-alt"></i></div> Phone: +233-2442-60015</li>
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div> Phone: +233 (0) 302941256 , +233 (0) 543167873</li>
                 <li>
-                    <div class="icon"><i class="fas fa-envelope"></i></div> E-mail: admin@trybenet.com</li>
+                    <div class="icon"><i class="fas fa-envelope"></i></div> E-mail: office@lawlexx.com , info@lawlexxshop.com , lawlexbrown@gmail.com</li>
             </ul>
             <hr>
             <p>We build web and mobile apps for various purposes to solve everyday problems. Join our unique client base and feel the ease of our services.</p>
@@ -192,27 +208,25 @@
     <section class="hire-us ">
         <h2 class="white">Hire Us</h2>
         <p class="white hire-text">We're currently taking on new projects. Would you like discuss yours?</p>
-        <p class="white">+233-2442-60015</p>
-        <p class="white">admin@trybenet.com</p>
+        <p class="white">+233 (0) 302941256 , +233 (0) 543167873</p>
+        <p class="white">office@lawlexx.com , info@lawlexxshop.com , lawlexbrown@gmail.com</p>
         <div class="social-media">
             <div class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+                <a href="https://facebook.com/LawlexxLLC"> <i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="social-icon">
-                <i class="fab fa-twitter"></i>
+                <a href="https://linkedIn.com/company/lawlexx"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="social-icon">
-                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/lawlexx_llc"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="social-icon">
-                <i class="fab fa-youtube"></i>
-            </div>
+
         </div>
     </section>
 
     <div class="footer">
         <div class="copyright-text">
-            <p class="white"> &copy; 2018 TrybeNet - Defining Global Innovation. All rights reserved.</p>
+            <p class="white"> &copy; 2021 Lawlexx LLC. All rights reserved.</p>
         </div>
         <ul class="footer-links">
             <li><a href="#">Home <span>|</span> </a></li>

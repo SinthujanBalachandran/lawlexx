@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="../styles.css">
     <title>Lawlexx</title>
 </head>
@@ -16,8 +18,23 @@
         <a href="#" class="logo">Lawlexx</a>
         <ul class="navigation">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="#">TEAM LAWLEXX</a></li>
-            <li><a href="#">SERVICES</a></li>
+            <li class="dropdown">
+                <div class="dropbtn">TEAM LAWLEXX <i class="fas fa-angle-down"></i></div>
+                <div class="dropdown-content">
+                    <a href="./team-lawlexx/team-line-up.html">Team Line Up</a>
+                    <a href="#">About Lawlexx</a>
+                    <a href="#">Job Offers & Internships</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropbtn">SERVICES <i class="fas fa-angle-down"></i></div>
+                <div class="dropdown-content">
+                    <a href="#">Web Development</a>
+                    <a href="#">Mobile App Development</a>
+                    <a href="#">Digital Marketing</a>
+                    <a href="#">Cyber Security Consultancy</a>
+                </div>
+            </li>
             <li><a href="our-clients.html">OUR CLIENTS</a></li>
             <li><a href="#">CONTACT US</a></li>
             <li><a href="requestQuote.html">REQUEST A QUOTE</a></li>
@@ -59,46 +76,60 @@
             </form>
         </div>
     </section>
-    <div id="map">
-
-    </div>
+    <div id="map"></div>
     <script>
         function initMap() {
-            var location = {
-                lat: -25.363,
-                lng: 131.044
-            };
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: location
+            // map options
+            var options = {
+                    zoom: 15,
+                    center: {
+                        lat: 9.6615,
+                        lng: 80.0255
+                    }
+                }
+                // new map
+            var map = new google.maps.Map(document.getElementById("map"), options)
+
+            // add marker
+            var marker = new google.maps.Marker({
+                position: {
+                    lat: 9.71667,
+                    lng: 80.03333
+                },
+                map: map
             });
+            var infoWindow = new google.maps.InfoWindow({
+                content: '<h1>Urumpirai</h1>'
+            });
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker)
+            })
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=12&size=400x400&key=AIzaSyC_nxC9VPTTSJ11Vl1FKxlZdnlsFJMTGM4&callback=initMap"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_nxC9VPTTSJ11Vl1FKxlZdnlsFJMTGM4&callback=initMap" async></script>
+
     <section class="hire-us ">
         <h2 class="white">Hire Us</h2>
         <p class="white hire-text">We're currently taking on new projects. Would you like discuss yours?</p>
-        <p class="white">+233-2442-60015</p>
-        <p class="white">admin@trybenet.com</p>
+        <p class="white">+233 (0) 302941256 , +233 (0) 543167873</p>
+        <p class="white">office@lawlexx.com , info@lawlexxshop.com , lawlexbrown@gmail.com</p>
         <div class="social-media">
             <div class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+                <a href="https://facebook.com/LawlexxLLC"> <i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="social-icon">
-                <i class="fab fa-twitter"></i>
+                <a href="https://linkedIn.com/company/lawlexx"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="social-icon">
-                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/lawlexx_llc"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="social-icon">
-                <i class="fab fa-youtube"></i>
-            </div>
+
         </div>
     </section>
 
     <div class="footer">
         <div class="copyright-text">
-            <p class="white"> &copy; 2018 TrybeNet - Defining Global Innovation. All rights reserved.</p>
+            <p class="white"> &copy; 2021 Lawlexx LLC. All rights reserved.</p>
         </div>
         <ul class="footer-links">
             <li><a href="#">Home <span>|</span> </a></li>

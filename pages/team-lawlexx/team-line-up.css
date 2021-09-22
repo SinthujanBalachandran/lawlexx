@@ -1,0 +1,167 @@
+.title {
+    text-align: center;
+}
+
+.professionals {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+    column-gap: 30px;
+}
+
+.professionals h5 {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.professionals h6 {
+    color: #666;
+    text-decoration: underline;
+}
+
+.professional {
+    display: flex;
+}
+
+.description {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.description p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+.professional-card {
+    position: relative;
+    height: 300px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.icon-box {
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    z-index: 12;
+}
+
+.icon-box a {
+    color: #fff;
+}
+
+.icon-box a:hover {
+    color: rgb(200, 189, 221);
+}
+
+.i-one,
+.i-two,
+.i-three {
+    margin: 0px 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.professional .professional-card:hover .icon-box .i-one {
+    transform: translateY(0px);
+    transition-delay: 0.1s;
+    opacity: 1;
+}
+
+.professional .professional-card:hover .icon-box .i-two {
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+    opacity: 1;
+}
+
+.professional .professional-card:hover .icon-box .i-three {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+
+.professional .professional-card:hover .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, .3);
+    z-index: 10;
+}
+
+
+/* media query starts here */
+
+@media( max-width:1110px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media( max-width:975px) {
+    .professional-card {
+        height: 200px;
+        min-width: 133px;
+    }
+    .icon-box {
+        font-size: 20px;
+    }
+}
+
+@media( max-width:850px) {
+    .professionals {
+        grid-template-columns: 1fr;
+    }
+    .professional-card {
+        height: 300px;
+        min-width: 200px;
+    }
+}
+
+@media( max-width:619px) {
+    .professional-card {
+        height: 200px;
+        min-width: 133px;
+    }
+    .icon-box {
+        font-size: 20px;
+    }
+}
+
+@media( max-width:500px) {
+    section {
+        padding: 50px 30px;
+    }
+    .professionals {
+        margin-top: 50px;
+    }
+    .professional {
+        flex-direction: column;
+        align-items: center;
+    }
+    .professional-card {
+        height: 300px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .description {
+        margin-left: 0px;
+    }
+}
