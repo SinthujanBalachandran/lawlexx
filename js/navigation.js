@@ -12,10 +12,10 @@ window.addEventListener('scroll', function() {
 const navBar = document.querySelector('.navigation');
 const toggleBtn = document.querySelector('.toggle');
 toggleBtn.onclick = function() {
-    toggleBtn.classList.toggle('active');
-    navBar.classList.toggle('active');
-}
-navBar.onclick = function() {
-    toggleBtn.classList.toggle('active');
-    navBar.classList.toggle('active');
-}
+        toggleBtn.classList.toggle('active');
+        navBar.classList.toggle('active');
+    }
+    // navBar.onclick = function() {
+    //     toggleBtn.classList.toggle('active');
+    //     navBar.classList.toggle('active');
+    // }
