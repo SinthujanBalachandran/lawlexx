@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="our-clients.css">
     <title>Lawlexx</title>
@@ -14,31 +16,33 @@
 <body>
     <header>
         <a href="#" class="logo">Lawlexx</a>
-        <ul class="navigation">
-            <li><a href="../index.html">HOME</a></li>
-            <li class="dropdown">
-                <div class="dropbtn">TEAM LAWLEXX <i class="fas fa-angle-down"></i></div>
-                <div class="dropdown-content">
-                    <a href="./team-lawlexx/team-line-up.html">Team Line Up</a>
-                    <a href="./team-lawlexx/about-us.html">About Lawlexx</a>
-                    <a href="./team-lawlexx/jobs.html">Job Offers & Internships</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <div class="dropbtn">SERVICES <i class="fas fa-angle-down"></i></div>
-                <div class="dropdown-content">
-                    <a href="#">Web Development</a>
-                    <a href="#">Mobile App Development</a>
-                    <a href="#">Digital Marketing</a>
-                    <a href="#">Cyber Security Consultancy</a>
-                </div>
-            </li>
-            <li><a href="#">OUR CLIENTS</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="requestQuote.html">REQUEST A QUOTE</a></li>
-            <li><a href="#"><i class="fas fa-search"></i></a></li>
-        </ul>
-        <div class="toggle"></div>
+        <div class="navigation">
+            <ul class="menu">
+                <li class="menu-item"><a href="../index.html">Home</a></li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">Team Lawlexx <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li class="sub-item"><a href="./team-lawlexx/team-line-up.html">Team Line Up</a></li>
+                        <li class="sub-item"><a href="./team-lawlexx/about-us.html">About Lawlexx</a></li>
+                        <li class="sub-item"><a href="./team-lawlexx/jobs.html">Job Offers & Internships</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">Services <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li class="sub-item"><a href="./services/web-app-dev.html">Web App Development</a></li>
+                        <li class="sub-item"><a href="./services/mobile-app-dev.html">Mobile App Development</a></li>
+                        <li class="sub-item"><a href="./services/cyber-security.html">Cyber Security Consultancy</a></li>
+                        <li class="sub-item"><a href="./services/digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="our-clients.html">Our Clients</a></li>
+                <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                <li class="menu-item"><a href="requestQuote.html">Request A Quote</a></li>
+                <li class="menu-item"><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="menu-btn"></div>
     </header>
     <div class="banner">
         <div class="banner-img">
