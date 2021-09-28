@@ -69,6 +69,11 @@ header .logo {
     letter-spacing: 2px;
 }
 
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
 header .navigation {
     position: relative;
     line-height: 100px;
